@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Scripts.js"></script>
+</head>
+
+<body>
+    <header style="position:absolute ; top:0 ;width:100% ;">
+        <h1 style="background-color:white ;">Pharmacy</h1>
+        <nav id="navigate">
+            <ul class="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                    <a href="#">Our Medicines</a>
+                    <ul id="Dropdown_1">
+                        <li><a href="#">Fever</a></li>
+                        <li><a href="#">Muscle Pains</a></li>
+                        <li><a href="#">Cold & Cough</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Health Care</a>
+                    <ul id="Dropdown_2">
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Home Care</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="lab-test.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form id="sectionForm" method="post">
+            <section title="Patient Contact Details"
+                style="position: relative; top: 120px ;left: 150px; text-align: left; width: 100%;">
+
+                <p><h2>Patient Contact Details</h2></p>
+                <p><label>Full Name</label></p>
+                <p><input type="text" placeholder="Full Name" name="fullname" required /> </p>
+                <p><label>Patient ID</label></p>
+                <p><input type="text" placeholder="Patient ID" name="id" /></p>
+                <p><label>Contact Number</label></p>
+                <p><input type="number" placeholder="Contact Number" name="phone" required /></p>
+                <p><label>Email ID</label></p>
+                <p><input type="email" placeholder="Email ID" name="email" required /></p>
+
+                <p><h2>Patient Address</h2></p>
+                <p><label>House Number</label></p>
+                <p><input type="text" placeholder="House Number" name="housenumber" required /> </p>
+                <p><label>Street</label></p>
+                <p><input type="text" placeholder="Street" name="street" required /></p>
+                <p><label>Area</label></p>
+                <p><input type="text" placeholder="Area" name="area" required /></p>
+                <p><label>District</label></p>
+                <p><select name="district">
+                    <option value="none" selected disabled hidden>Choose</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Haridwar">Haridwar</option>
+                    <option value="Chamoli">Chamoli</option>
+                    <option value="Uttarkashi">Uttarkashi</option>
+                </select></p>
+
+                <p><h2>Choose the Test Type (Check atleast one box without fail)</h2></p>
+                <p><input type="checkbox" name="labtest" value="cbc">CBC</p>
+                <p><input type="checkbox" name="labtest" value="urine">Complete Urine</p>
+                <p><input type="checkbox" name="labtest" value="lipid">Lipid Profile</p>
+                <p><input type="checkbox" name="labtest" value="tsh">Thyroid Stimulating Hormone (TSH)</p>
+                <p><input type="checkbox" name="labtest" value="glucose">Glucose Test</p>
+
+                <p><input type="submit" value="Submit"></p>
+            </section>
+            
+            </form>
+    </section>
+    <footer style="position:relative ; bottom:-120px ;width:100% ; text-align:right;">
+        <span style="text-align:center">@Copyright. Only for demonstration purposes.</span>
+    </footer>
+</body>
+
+</html>
